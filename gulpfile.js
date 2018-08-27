@@ -15,6 +15,8 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var run = require("run-sequence");
+var ttf2woff = require('gulp-ttf2woff');
+var ttf2woff2 = require('gulp-ttf2woff2');
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -85,6 +87,18 @@ gulp.task("copy", function() {
 
 gulp.task("clean", function() {
   return del("build");
+});
+
+gulp.task('ttf2woff', function(){
+  gulp.src(['source/fonts/*.ttf'])
+    .pipe(ttf2woff())
+    .pipe(gulp.dest('source/fonts/'));
+});
+
+gulp.task('ttf2woff2', function(){
+  gulp.src(['source/fonts/*.ttf'])
+    .pipe(ttf2woff2())
+    .pipe(gulp.dest('source/fonts/'));
 });
 
 gulp.task("serve", ["style"], function() {

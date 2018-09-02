@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  background-color: $background-color__header;
+}
+
+.header__menu-area {
+  width: 382px;
+  height: 665px;
+  background-image: url("../img/header__menu-area--background@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% top;
+  background-size: 100% cover;
+
+  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/header__menu-area--background@2x.jpg");
+  }
+}

@@ -10,5 +10,137 @@
 
   <body>
 
+    <svg style="display: none">
+      <symbol id="promotion__button--arrow">
+        <polyline points="0,0 65,70 0, 140" stroke="rgb(193, 146, 38)" stroke-width="13" fill="none">
+      </symbol>
+    </svg>
+
+    <div class="grid">
+      <header class="header">
+        <nav class="header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--daily main-nav__item--selected">
+              <a class="main-nav__link" href="#">
+                Products for daily life
+                <picture>
+                  <img class="main-nav__icon" src="img/main-nav__daily@1x.png" srcset="img/main-nav__daily@1x.png 1x, img/main-nav__daily@2x.png 2x" alt="Icon to choose daily goods">
+                </picture>
+              </a>
+              <div class="main-nav__daily daily">
+                <button class="daily__toggle">
+                  Close menu
+                </button>
+                <h1 class="daily__title">
+                  Warehouse
+                </h1>
+                <ul class="daily__menu">
+                  <li class="daily__item daily__item--bowls">
+                    <a href="#" class="daily__link">
+                      Bowls & pans
+                    </a>
+                  </li>
+                  <li class="daily__item daily__item--cups">
+                    <a href="#" class="daily__link">
+                      Cups
+                    </a>
+                  </li>
+                  <li class="daily__item daily__item--dispensers">
+                    <a href="#" class="daily__link">
+                      Dispensers
+                    </a>
+                  </li>
+                  <li class="daily__item daily__item--furniture">
+                    <a href="#" class="daily__link">
+                      Furniture
+                    </a>
+                  </li>
+                  <li class="daily__item daily__item--tableware">
+                    <a href="#" class="daily__link">
+                      Tableware
+                    </a>
+                  </li>
+                  <li class="daily__item daily__item--cutlery">
+                    <a href="#" class="daily__link">
+                      Cutlery
+                    </a>
+                  </li>
+                  <li class="daily__item daily__item--plants">
+                    <a href="#" class="daily__link">
+                      Plants & deco
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-nav__item main-nav__item--luxury">
+              <a class="main-nav__link" href="#">
+                Luxury products
+                <picture>
+                  <img class="main-nav__icon" src="img/main-nav__luxury@1x.png" srcset="img/main-nav__luxury@1x.png 1x, img/main-nav__luxury@2x.png 2x" alt="Icon to choose luxury goods">
+                </picture>
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--search">
+              <a class="main-nav__link" href="#">
+                Search
+                <picture>
+                  <img class="main-nav__icon" src="img/main-nav__search@1x.png" srcset="img/main-nav__search@1x.png 1x, img/main-nav__search@2x.png 2x" alt="Icon to search the catalog">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__menu-area">
+
+        </div>
+      </header>
+      <section class="promotion">
+        <h2 class="visually-hidden">Promotion section</h2>
+        <a class="promotion__product" href="#">
+          <h3 class="promotion__title">
+            Cork Salt & Pepper
+          </h3>
+          <span class="promotion__price">
+            45.50&nbsp;&nbsp;$
+          </span>
+          <picture>
+            <img class="promotion__pic" src="img/promotion__pic@1x.png" srcset="img/promotion__pic@1x.png 1x, img/promotion__pic@2x.png 2x" alt="Foto of cork salt and pepper">
+          </picture>
+        </a>
+        <div class="promotion__author">
+          <figure>
+            <div class="promotion__frame">
+              <picture>
+                <img class="promotion__avatar" src="img/promotion__avatar@1x.jpg" srcset="img/promotion__avatar@1x.jpg 1x, img/promotion__avatar@2x.jpg 2x" alt="Photo of Materia & Nendo">
+              </picture>
+            </div>
+            <figcaption>
+              by Materia & Nendo
+            </figcaption>
+          </figure>
+          <p class="promotion__slogan">
+            Good Things&nbsp;come in Paris
+          </p>
+        </div>
+        <div class="promotion__control">
+          <button class="promotion__button promotion__button--prev">
+            Previous item
+            <svg class="promotion__scroll promotion__scroll--prev" width="7" height="14" viewbox="0 0 70 140">
+              <use xlink:href="#promotion__button--arrow"></use>
+            </svg>
+          </button>
+          <picture>
+            <img class="promotion__icon" src="img/promotion__icon@1x.png" srcset="img/promotion__icon@1x.png 1x, img/promotion__icon@2x.png 2x" alt="Icon of product type">
+          </picture>
+          <button class="promotion__button promotion__button--next">
+            Next item
+            <svg class="promotion__scroll promotion__scroll--next" width="7" height="14" viewbox="0 0 70 140">
+              <use xlink:href="#promotion__button--arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

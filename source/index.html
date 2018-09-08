@@ -20,18 +20,18 @@
       <header class="header">
         <nav class="header__nav main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--daily main-nav__item--selected">
+            <li class="main-nav__item main-nav__item--daily">
               <a class="main-nav__link" href="#">
                 Products for daily life
                 <picture>
                   <img class="main-nav__icon" src="img/main-nav__daily@1x.png" srcset="img/main-nav__daily@1x.png 1x, img/main-nav__daily@2x.png 2x" alt="Icon to choose daily goods">
                 </picture>
               </a>
-              <div class="main-nav__daily daily">
-                <button class="daily__toggle">
+              <div class="main-nav__menu main-nav__daily daily nojs">
+                <button class="daily__toggle menu-toggle">
                   Close menu
                 </button>
-                <h1 class="daily__title">
+                <h1 class="daily__title menu-title">
                   Warehouse
                 </h1>
                 <ul class="daily__menu">
@@ -80,6 +80,14 @@
                   <img class="main-nav__icon" src="img/main-nav__luxury@1x.png" srcset="img/main-nav__luxury@1x.png 1x, img/main-nav__luxury@2x.png 2x" alt="Icon to choose luxury goods">
                 </picture>
               </a>
+              <div class="main-nav__menu main-nav__luxury luxury nojs">
+                <button class="luxury__toggle menu-toggle">
+                  Close menu
+                </button>
+                <h1 class="luxury__title menu-title">
+                  Luxury items
+                </h1>
+              </div>
             </li>
             <li class="main-nav__item main-nav__item--search">
               <a class="main-nav__link" href="#">
@@ -88,12 +96,17 @@
                   <img class="main-nav__icon" src="img/main-nav__search@1x.png" srcset="img/main-nav__search@1x.png 1x, img/main-nav__search@2x.png 2x" alt="Icon to search the catalog">
                 </picture>
               </a>
+              <div class="main-nav__menu main-nav__search search nojs">
+                <button class="search__toggle menu-toggle">
+                  Close menu
+                </button>
+                <h1 class="search__title menu-title">
+                  Search catalog
+                </h1>
+              </div>
             </li>
           </ul>
         </nav>
-        <div class="header__menu-area">
-
-        </div>
       </header>
       <section class="promotion">
         <h2 class="visually-hidden">Promotion section</h2>
@@ -142,5 +155,6 @@
         </div>
       </section>
     </div>
+    <script src="js/menu.js"></script>
   </body>
 </html>

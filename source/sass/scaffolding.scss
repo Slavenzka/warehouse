@@ -45,3 +45,36 @@ a {
   grid-column: 1 / 4;
   grid-row: 1 / 2;
 }
+
+.menu-toggle {
+  position: absolute;
+  top: 27px;
+  right: 26px;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url("../img/Shape 12@1x.svg");
+  border: 0;
+}
+
+div.nojs {
+  transform: translateX(0);
+}
+
+.nojs > .menu-toggle {
+  display: none;
+}
+
+.menu-title {
+  margin: 0;
+  margin-top: 36px;
+  margin-left: 34px;
+  font-family: $font-family__main;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: $font-color__daily--title;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}

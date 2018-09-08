@@ -1,0 +1,13 @@
+.header {
+  position: relative;
+  display: flex;
+  background-color: $background-color__header;
+  background-image: url("../img/header__menu-area--background@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% top;
+  background-size: 382px 665px;
+
+  @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/header__menu-area--background@2x.jpg");
+  }
+}

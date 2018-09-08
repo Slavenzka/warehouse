@@ -1,0 +1,145 @@
+.promotion {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $background-color__header;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 184px;
+    width: 0;
+    height: 0;
+    border-top: 283px solid $background-color__triangle;
+    border-left: 176px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 166px solid transparent;
+    z-index: 0;
+  }
+}
+
+@media (min-width: 1501px) {
+  .promotion {
+    padding-left: 100vw / 1500 * 20;
+  }
+}
+
+.promotion__product {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  min-width: 520px;
+  max-height: 523px;
+  font-family: $font-family__main;
+  font-weight: 100;
+  font-size: 28px;
+  line-height: 37.5px;
+  color: $font-color__promotion--product;
+}
+
+.promotion__title {
+  margin: 0;
+  margin-top: 69px;
+  font: inherit;
+}
+
+.promotion__pic {
+  position: relative;
+  margin-top: 28px;
+  margin-left: -145px;
+  z-index: 1;
+}
+
+.promotion__author {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 350px;
+  margin: 0 auto;
+  padding-top: 6px;
+}
+
+.promotion__author figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-left: -10px;
+  padding: 0;
+  width: 100%;
+}
+
+.promotion__frame {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.promotion__avatar {
+  margin-top: -6px;
+  margin-left: -38px;
+}
+
+.promotion__author figcaption {
+  margin-top: 16px;
+  margin-left: 13px;
+  font-family: $font-family__main;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 17px;
+  color: $font-color__promotion--author;
+  text-transform: uppercase;
+}
+
+.promotion__slogan {
+  margin: 0;
+  margin-top: 41px;
+  margin-left: -10px;
+  font-family: $font-family__main;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 59px;
+  color: $font-color__promotion--slogan;
+  text-align: center;
+  letter-spacing: 1.1px;
+}
+
+.promotion__control {
+  position: relative;
+  order: 0;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 87px;
+  margin-left: 319px;
+  width: 100%;
+  max-height: 52px;
+  z-index: 1;
+}
+
+.promotion__button {
+  margin-top: 19px;
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.promotion__icon {
+  margin-left: 10px;
+  width: 25px;
+  height: 52px;
+}
+
+.promotion__scroll--prev {
+  transform: rotate(180deg);
+}
+
+.promotion__button--next {
+  margin-left: 10px;
+}

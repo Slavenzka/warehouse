@@ -1,0 +1,76 @@
+.main-nav {
+  margin-top: 60px;
+  width: 70px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item--luxury {
+  margin-top: 17px;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 0;
+}
+
+.main-nav__item:hover,
+.main-nav__item--selected {
+  background-color: $background-color__main-nav;
+}
+
+.main-nav__item--selected .main-nav__link {
+  cursor: auto;
+}
+
+.main-nav__item--luxury .main-nav__link {
+  padding-top: 18px;
+  padding-left: 15px;
+}
+
+.main-nav__item--search .main-nav__link {
+  padding-top: 16px;
+  padding-left: 19px;
+}
+
+.main-nav__item--daily .main-nav__icon {
+  width: 30px;
+  height: 24px;
+}
+
+.main-nav__item--luxury .main-nav__icon {
+  width: 32px;
+  height: 27px;
+}
+
+.main-nav__item--search .main-nav__icon {
+  width: 25px;
+  height: 36px;
+}
+
+.main-nav__daily,
+.main-nav__luxury,
+.main-nav__search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 382px;
+  height: 665px;
+  background-color: rgba(20, 32, 56, 0.9);
+}
+
+.main-nav__item--daily:hover .nojs,
+.main-nav__item--luxury:hover .nojs,
+.main-nav__item--search:hover .nojs {
+  z-index: 1;
+  opacity: 1;
+}

@@ -60,7 +60,7 @@
 .main-nav__daily,
 .main-nav__luxury,
 .main-nav__search {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 382px;
@@ -71,6 +71,5 @@
 .main-nav__item--daily:hover .nojs,
 .main-nav__item--luxury:hover .nojs,
 .main-nav__item--search:hover .nojs {
-  z-index: 1;
-  opacity: 1;
+  display: flex;
 }

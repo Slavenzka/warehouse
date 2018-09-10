@@ -65,6 +65,11 @@ a {
   grid-row: 1 / 2;
 }
 
+.pots {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+
 .menu-toggle {
   position: absolute;
   top: 27px;

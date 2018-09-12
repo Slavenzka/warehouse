@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
   <head>
     <meta charset="utf-8">
@@ -12,11 +12,20 @@
 
     <svg style="display: none">
       <symbol id="promotion__button--arrow">
-        <polyline points="0,0 65,70 0, 140" stroke="rgb(193, 146, 38)" stroke-width="13" fill="none">
+        <polyline points="0,0 65,70 0, 140" stroke="rgb(193, 146, 38)" stroke-width="13" fill="none"/>
+      </symbol>
+      <symbol id="pots__icon--heart">
+        <path d="M8.055,17.001 C8.055,17.001 -4.628,4.849 1.836,0.874 C5.564,-1.418 7.991,1.516 7.991,1.516 C7.991,1.516 10.418,-1.418 14.146,0.874 C20.610,4.849 8.055,17.001 8.055,17.001"/>
+      </symbol>
+      <symbol id="pots__scroll--arrow">
+        <path fill-rule="evenodd"  stroke="rgb(197, 197, 197)" stroke-width="2.083px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M2.491,1.041 L10.041,8.041 L2.491,15.041 "/>
       </symbol>
     </svg>
 
     <div class="grid">
+      <h1 class="visually-hidden">
+        Warehouse shop main page
+      </h1>
       <header class="header">
         <nav class="header__nav main-nav">
           <ul class="main-nav__list">
@@ -31,9 +40,9 @@
                 <button class="daily__toggle menu-toggle">
                   Close menu
                 </button>
-                <h1 class="daily__title menu-title">
+                <h2 class="daily__title menu-title">
                   Warehouse
-                </h1>
+                </h2>
                 <ul class="daily__menu">
                   <li class="daily__item daily__item--bowls">
                     <a href="#" class="daily__link">
@@ -84,9 +93,9 @@
                 <button class="luxury__toggle menu-toggle">
                   Close menu
                 </button>
-                <h1 class="luxury__title menu-title">
+                <h2 class="luxury__title menu-title">
                   Luxury items
-                </h1>
+                </h2>
               </div>
             </li>
             <li class="main-nav__item main-nav__item--search">
@@ -100,9 +109,9 @@
                 <button class="search__toggle menu-toggle">
                   Close menu
                 </button>
-                <h1 class="search__title menu-title">
+                <h2 class="search__title menu-title">
                   Search catalog
-                </h1>
+                </h2>
               </div>
             </li>
           </ul>
@@ -153,6 +162,64 @@
             </svg>
           </button>
         </div>
+      </section>
+      <section class="pots">
+        <h2 class="visually-hidden">
+          Pots and tea stuff
+        </h2>
+        <header class="pots__header">
+          <a href="#" class="pots__header-link">
+            <h3 class="pots__header-title">
+              Seven Pots
+              <span>
+                Collection
+              </span>
+            </h3>
+          </a>
+        </header>
+        <div class="pots__product">
+          <a class="pots__link" href="#">
+            <h4 class="pots__item">
+              Kettle Thermo Pot
+            </h4>
+            <span class="pots__price">
+              274.50
+            </span>
+          </a>
+          <button class="pots__favourite favourite" type="button">
+            <svg class="pots__icon heart" width="16" height="17" viewbox="0 0 16 17">
+              <use xlink:href="#pots__icon--heart"></use>
+            </svg>
+            Add to favs
+          </button>
+          <a class="pots__pic-link" href="#">
+            <picture>
+              <img class="pots__pic" src="img/pots__product--img@1x.png" srcset="img/pots__product--img@1x.png 1x, img/pots__product--img@2x.png 2x" alt="Photo of Kettle Thermo Pot with a cup">
+            </picture>
+          </a>
+        </div>
+        <div class="pots__author">
+          <figure>
+            <div class="pots__frame">
+              <picture>
+                <img class="pots__avatar" src="img/pots__avatar@1x.jpg" srcset="img/pots__avatar@1x.jpg 1x, img/pots__avatar@2x.jpg 2x" alt="Photo of Noor Jahaan">
+              </picture>
+            </div>
+            <figcaption class="pots__name">
+              By Noor Jahaan
+            </figcaption>
+          </figure>
+          <p class="pots__slogan">
+            Tea O'Clock
+          </p>
+        </div>
+        <button class="pots__scroll">
+          Show next item
+          <svg class="pots__scroll-icon" width="12" height="17" viewbox="0 0 13 16">
+            <use xlink:href="#pots__scroll--arrow">
+            </use>
+          </svg>
+        </button>
       </section>
     </div>
     <script src="js/menu.js"></script>

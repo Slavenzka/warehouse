@@ -1,11 +1,12 @@
 .header {
   position: relative;
-  display: flex;
+  grid-template-columns: 70px auto;
   background-color: $background-color__header;
   background-image: url("../img/header__menu-area--background@1x.jpg");
   background-repeat: no-repeat;
   background-position: 100% top;
   background-size: 382px 665px;
+  overflow: hidden;
 
   @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
     background-image: url("../img/header__menu-area--background@2x.jpg");

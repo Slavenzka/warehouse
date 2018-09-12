@@ -71,6 +71,5 @@
 .main-nav__item--daily:hover .nojs,
 .main-nav__item--luxury:hover .nojs,
 .main-nav__item--search:hover .nojs {
-  z-index: 1;
-  opacity: 1;
+  display: flex;
 }

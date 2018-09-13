@@ -1,0 +1,59 @@
+.rooms {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../img/rooms-background@1x.jpg");
+    transform: translateZ(-1px) scale(2) translateY(-200px);
+  }
+}
+
+.rooms,
+.rooms::before {
+  background: 50% 50% / cover;
+}
+
+@media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+  .rooms::before {
+    background-image: url("../img/rooms-background@2x.jpg");
+  }
+}
+
+.rooms__label {
+  position: absolute;
+  top: 79px;
+  left: calc(50% - 260px);
+  padding-top: 96px;
+  width: 161px;
+  height: 162px;
+  font-family: $font-family__main;
+  font-size: 17px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $font-color__rooms-label;
+  text-align: center;
+  background-color: $background-color__pots;
+  border-radius: 50%;
+}
+
+.rooms__icon-diamond {
+  position: absolute;
+  left: calc(50% - 16px);
+  top: 54px;
+}
+
+.rooms__icon-space {
+  position: absolute;
+  left: calc(50% - 13px);
+  top: 62px;
+}

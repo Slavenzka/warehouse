@@ -20,6 +20,12 @@
       <symbol id="pots__scroll--arrow">
         <path fill-rule="evenodd"  stroke="rgb(197, 197, 197)" stroke-width="2.083px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M2.491,1.041 L10.041,8.041 L2.491,15.041 "/>
       </symbol>
+      <symbol id="rooms__icon-space">
+        <path class="diamond" fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.000,-0.000 L26.000,-0.000 L13.000,15.000 L-0.000,-0.000 Z"/>
+      </symbol>
+      <symbol id="rooms__icon-diamond">
+        <path class="space" fill-rule="evenodd"  fill="rgb(147, 147, 147)" d="M6.000,-0.000 L26.000,-0.000 L32.000,8.000 L17.000,26.000 L0.000,8.000 L6.000,-0.000 Z"/>
+      </symbol>
     </svg>
 
     <div class="grid">
@@ -221,6 +227,20 @@
           </svg>
         </button>
       </section>
+      <section class="rooms">
+        <a class="rooms__link" href="#">
+          <div class="rooms__label">
+            <svg class="rooms__icon-diamond" width="32" height="26" viebox="0 0 32 26">
+              <use xlink:href="#rooms__icon-diamond"></use>
+            </svg>
+            <svg class="rooms__icon-space" width="26" height="15" viebox="0 0 26 15">
+              <use xlink:href="#rooms__icon-space"></use>
+            </svg>
+            Rooms
+          </div>
+        </a>
+      </section>
+      <section class="shackers"></section>
     </div>
     <script src="js/menu.js"></script>
   </body>

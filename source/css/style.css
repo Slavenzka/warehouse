@@ -79,6 +79,8 @@
             transform: translateX(382px); } }
 
 html {
+  height: 100%;
+  overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -90,7 +92,14 @@ html {
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
@@ -122,6 +131,14 @@ a {
 .pots {
   grid-column: 1 / -1;
   grid-row: 2 / 3; }
+
+.rooms {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4; }
+
+.shackers {
+  grid-column: 1 / -1;
+  grid-row: 4 / 5; }
 
 .menu-toggle {
   position: absolute;
@@ -487,7 +504,8 @@ div.nojs {
   left: 40px;
   width: 34px;
   height: 20px;
-  background-image: url("../img/header__daily--bowls@1x.png"); }
+  background-image: url("../img/header__daily--bowls@1x.png");
+  background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .daily__item--bowls .daily__link::before {
       background-image: url("../img/header__daily--bowls@2x.png"); } }
@@ -501,7 +519,8 @@ div.nojs {
     left: 10px;
     width: 20px;
     height: 31px;
-    background-image: url("../img/header__daily--cups@1x.png"); }
+    background-image: url("../img/header__daily--cups@1x.png");
+    background-size: cover; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .daily__item--cups .daily__link::before {
         background-image: url("../img/header__daily--cups@2x.png"); } }
@@ -513,7 +532,8 @@ div.nojs {
   left: 40px;
   width: 13px;
   height: 35px;
-  background-image: url("../img/header__daily--dispensers@1x.png"); }
+  background-image: url("../img/header__daily--dispensers@1x.png");
+  background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .daily__item--dispensers .daily__link::before {
       background-image: url("../img/header__daily--dispensers@2x.png"); } }
@@ -525,7 +545,8 @@ div.nojs {
   left: 22px;
   width: 41px;
   height: 26px;
-  background-image: url("../img/header__daily--furniture@1x.png"); }
+  background-image: url("../img/header__daily--furniture@1x.png");
+  background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .daily__item--furniture .daily__link::before {
       background-image: url("../img/header__daily--furniture@2x.png"); } }
@@ -537,7 +558,8 @@ div.nojs {
   left: 28px;
   width: 33px;
   height: 33px;
-  background-image: url("../img/header__daily--table@1x.png"); }
+  background-image: url("../img/header__daily--table@1x.png");
+  background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .daily__item--tableware .daily__link::before {
       background-image: url("../img/header__daily--table@2x.png"); } }
@@ -549,7 +571,8 @@ div.nojs {
   left: 31px;
   width: 9px;
   height: 33px;
-  background-image: url("../img/header__daily--cutlery@1x.png"); }
+  background-image: url("../img/header__daily--cutlery@1x.png");
+  background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .daily__item--cutlery .daily__link::before {
       background-image: url("../img/header__daily--cutlery@2x.png"); } }
@@ -563,7 +586,8 @@ div.nojs {
     left: 42px;
     width: 34px;
     height: 39px;
-    background-image: url("../img/header__daily--plants@1x.png"); }
+    background-image: url("../img/header__daily--plants@1x.png");
+    background-size: cover; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .daily__item--plants .daily__link::before {
         background-image: url("../img/header__daily--plants@2x.png"); } }
@@ -801,3 +825,62 @@ div.nojs {
   font-size: 0;
   background-color: transparent;
   border: none; }
+
+.rooms {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform-style: inherit;
+          transform-style: inherit;
+  overflow: hidden; }
+  .rooms::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../img/rooms-background@1x.jpg");
+    -webkit-transform: translateZ(-1px) scale(2) translateY(-200px);
+            transform: translateZ(-1px) scale(2) translateY(-200px); }
+
+.rooms,
+.rooms::before {
+  background: 50% 50% / cover; }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .rooms::before {
+    background-image: url("../img/rooms-background@2x.jpg"); } }
+
+.rooms__label {
+  position: absolute;
+  top: 79px;
+  left: calc(50% - 260px);
+  padding-top: 96px;
+  width: 161px;
+  height: 162px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #939393;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 50%; }
+
+.rooms__icon-diamond {
+  position: absolute;
+  left: calc(50% - 16px);
+  top: 54px; }
+
+.rooms__icon-space {
+  position: absolute;
+  left: calc(50% - 13px);
+  top: 62px; }
+
+.shackers {
+  position: relative;
+  background-color: black;
+  overflow: hidden; }

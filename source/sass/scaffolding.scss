@@ -19,6 +19,8 @@
 }
 
 html {
+  height: 100%;
+  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -31,6 +33,11 @@ html {
 body {
   margin: 0;
   padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 a {
@@ -68,6 +75,16 @@ a {
 .pots {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
+}
+
+.rooms {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+}
+
+.shackers {
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
 }
 
 .menu-toggle {

@@ -34,7 +34,6 @@ body {
   margin: 0;
   padding: 0;
   perspective: 1px;
-  transform-style: preserve-3d;
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -61,6 +60,7 @@ a {
   grid-template-columns: minmax(360px, auto) minmax(688px, auto) 92px minmax(360px, auto);
   grid-template-rows: 665px 372px 330px 370px 377px 346px;
   min-width: 1500px;
+  transform-style: preserve-3d;
 }
 
 .header {
@@ -139,6 +139,10 @@ div.nojs {
   fill: $background-color__heart--disabled;
 }
 
+.like .heart {
+  fill: $background-color__heart--enabled;
+}
+
 .favourite {
   position: relative;
   display: inline-block;
@@ -155,4 +159,11 @@ div.nojs {
   vertical-align: top;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.like {
+  font-family: $font-family__main;
+  font-size: 18px;
+  color: $font-color__fav;
 }

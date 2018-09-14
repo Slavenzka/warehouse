@@ -3,19 +3,41 @@
   align-items: flex-start;
   justify-content: flex-start;
   background-color: $background-color__pots;
-  overflow: hidden;
 }
 
 .pots__header {
   position: relative;
   display: flex;
   justify-content: center;
-  padding-top: 233px;
   width: 360px;
   height: 100%;
   background-color: $background-color__pots-header;
+}
+
+.pots__header-link {
+  position: relative;
+  display: block;
+  padding-top: 233px;
+  width: 100%;
+  height: 100%;
 
   &::before {
+    position: absolute;
+    content: "";
+    top: 119px;
+    left: 121px;
+    width: 128px;
+    height: 79px;
+    background-image: url("../img/pots__header--icon@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+      background-image: url("../img/pots__header--icon@2x.png");
+    }
+  }
+
+  &::after {
     position: absolute;
     content: "";
     top: 0;
@@ -32,7 +54,6 @@
 }
 
 .pots__header-title {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,18 +65,6 @@
   line-height: 26px;
   color: $font-color__pots--title;
   text-transform: uppercase;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: -114px;
-    left: -4px;
-    width: 128px;
-    height: 79px;
-    background-image: url("../img/pots__header--icon@1x.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 }
 
 .pots__header-title span {
@@ -203,4 +212,5 @@
   font-size: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }

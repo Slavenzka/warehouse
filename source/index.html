@@ -14,7 +14,7 @@
       <symbol id="promotion__button--arrow">
         <polyline points="0,0 65,70 0, 140" stroke="rgb(193, 146, 38)" stroke-width="13" fill="none"/>
       </symbol>
-      <symbol id="pots__icon--heart">
+      <symbol id="global__icon--heart">
         <path d="M8.055,17.001 C8.055,17.001 -4.628,4.849 1.836,0.874 C5.564,-1.418 7.991,1.516 7.991,1.516 C7.991,1.516 10.418,-1.418 14.146,0.874 C20.610,4.849 8.055,17.001 8.055,17.001"/>
       </symbol>
       <symbol id="pots__scroll--arrow">
@@ -194,7 +194,7 @@
           </a>
           <button class="pots__favourite favourite" type="button">
             <svg class="pots__icon heart" width="16" height="17" viewbox="0 0 16 17">
-              <use xlink:href="#pots__icon--heart"></use>
+              <use xlink:href="#global__icon--heart"></use>
             </svg>
             Add to favs
           </button>
@@ -228,6 +228,10 @@
         </button>
       </section>
       <section class="rooms">
+        <h2 class="visually-hidden">
+          Goods for room decorations
+        </h2>
+        <div class="rooms__wrapper"></div>
         <a class="rooms__link" href="#">
           <div class="rooms__label">
             <svg class="rooms__icon-diamond" width="32" height="26" viebox="0 0 32 26">
@@ -240,7 +244,57 @@
           </div>
         </a>
       </section>
-      <section class="shackers"></section>
+      <section class="shackers">
+        <h2 class="visually-hidden">
+          Shakers collection
+        </h2>
+        <header class="shakers__header">
+          <a href="#" class="shakers__header-link">
+            <h3 class="shakers__header-title">
+              Shakers
+              <span>
+                Collection
+              </span>
+            </h3>
+          </a>
+        </header>
+        <div class="shakers__product">
+          <a class="shakers__link" href="#">
+            <h4 class="shakers__item">
+              Salt & Pepper Grinder
+            </h4>
+            <span class="shakers__price">
+              75.50
+            </span>
+          </a>
+          <button class="shakers__favourite favourite like" type="button">
+            <svg class="shakers__icon heart" width="16" height="17" viewbox="0 0 16 17">
+              <use xlink:href="#global__icon--heart"></use>
+            </svg>
+            Faved
+          </button>
+          <a class="shakers__pic-link" href="#">
+            <picture>
+              <img class="shakers__pic" src="img/shakers__product--img@1x.jpg" srcset="img/shakers__product--img@1x.jpg 1x, img/shakers__product--img@2x.jpg 2x" alt="Photo of Salt and Pepper grinder">
+            </picture>
+          </a>
+        </div>
+        <div class="shakers__author">
+          <figure>
+            <div class="shakers__frame">
+              <picture>
+                <img class="shakers__avatar" src="img/shakers__avatar@1x.jpg" srcset="img/shakers__avatar@1x.jpg 1x, img/shakers__avatar@2x.jpg 2x" alt="Photo of Amisha Patel">
+              </picture>
+            </div>
+            <figcaption class="shakers__name">
+              By Amisha Patel
+            </figcaption>
+          </figure>
+          <p class="shakers__slogan">
+            Ebony & Ivory
+          </p>
+        </div>
+      </section>
     </div>
     <script src="js/menu.js"></script>
   </body>

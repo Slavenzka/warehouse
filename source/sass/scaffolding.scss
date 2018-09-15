@@ -92,6 +92,11 @@ a {
   grid-row: 5 / 6;
 }
 
+.footer {
+  grid-column: 1 / -1;
+  grid-row: 6 / 7;
+}
+
 .menu-toggle {
   position: absolute;
   top: 27px;

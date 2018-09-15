@@ -7,6 +7,7 @@
   background-position: 100% top;
   background-size: 382px 665px;
   overflow: hidden;
+  z-index: 1;
 
   @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
     background-image: url("../img/header__menu-area--background@2x.jpg");

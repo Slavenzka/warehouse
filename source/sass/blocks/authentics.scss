@@ -1,0 +1,204 @@
+.authentics {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: $background-color__authentics;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.authentics__header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-basis: 363px;
+  height: 100%;
+  background-color: $background-color__authentics-header;
+}
+
+.authentics__header-link {
+  position: relative;
+  display: block;
+  padding: 264px 50px 0 50px;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 111px;
+    left: 131px;
+    width: 118px;
+    height: 115px;
+    background-image: url("../img/authentics__header--icon@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+      background-image: url("../img/authentics__header--icon@2x.png");
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -11px;
+    width: 11px;
+    height: 100%;
+    background:
+      linear-gradient(225deg, $background-color__authentics 0%, $background-color__authentics 33%, transparent 33%, transparent 100%),
+      linear-gradient(-45deg, $background-color__authentics 0%, $background-color__authentics 33%, $background-color__authentics-header 33%, $background-color__authentics-header 100%);
+    background-repeat: repeat-y;
+    background-size: 11px 22px;
+    background-position: 0 -10px;
+  }
+}
+
+.authentics__header-title span {
+  margin-top: -3px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $font-color__authentics--collection;
+}
+
+.authentics__header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-left: 11px;
+  font-family: $font-family__main;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 26px;
+  color: $font-color__authentics--title;
+  text-transform: uppercase;
+}
+
+.pots__header-title span {
+  margin-top: -4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $font-color__pots--collection;
+}
+
+.authentics__product {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 54px;
+  padding-left: 56px;
+  flex-basis: 750px;
+  max-height: 100%;
+}
+
+.authentics__link {
+  max-width: 217px;
+  font-family: $font-family__main;
+  color: $font-color__product;
+}
+
+.authentics__item {
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 300;
+  color: inherit;
+}
+
+.authentics__price {
+  position: relative;
+  margin-left: 2px;
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: 300;
+  color: inherit;
+  letter-spacing: -0.1px;
+
+  &::before {
+    content: "$";
+    position: absolute;
+    top: 2px;
+    right: -18px;
+    font-family: $font-family__aux;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.authentics__favourite {
+  margin-top: 32px;
+  padding-left: 28px;
+}
+
+.authentics__favourite > .heart {
+  top: 2px;
+  left: 2px;
+}
+
+.authentics__pic-link {
+  margin-top: 188px;
+  margin-left: 34px;
+}
+
+.authentics__author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 48px;
+  margin-left: auto;
+  padding-top: 76px;
+  flex-basis: 250px;
+}
+
+.authentics__author figure {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+}
+
+.authentics__frame {
+  position: relative;
+  align-self: flex-start;
+  margin-left: 38px;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.authentics__avatar {
+  margin-top: -26px;
+  margin-left: -38px;
+}
+
+.authentics__name {
+  margin-top: 16px;
+  margin-left: 7px;
+  font-family: $font-family__main;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  color: $font-color__authentics-name;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.authentics__slogan {
+  margin: 0;
+  margin-top: 40px;
+  padding-left: 1px;
+  font-family: $font-family__main;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 59px;
+  color: $font-color__slogan;
+  letter-spacing: 0.1px;
+}

@@ -1,12 +1,9 @@
 .rooms {
+  position: relative;
   transform-style: inherit;
 }
 
-.rooms__wrapper {
-  background: 50% 50% / cover;
-}
-
-.rooms__wrapper {
+.rooms__parallax {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -14,11 +11,13 @@
   right: 0;
   min-height: 200%;
   width: 100%;
+  background: 50% 50% / cover;
   background-image: url("../img/rooms-background@1x.jpg");
   box-sizing: border-box;
   overflow: hidden;
   transform-style: inherit;
   transform: translateZ(-1px) scale(2) translateY(-100px);
+  z-index: -1;
 
   @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
     background-image: url("../img/rooms-background@2x.jpg");

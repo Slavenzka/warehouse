@@ -451,7 +451,8 @@ div.nojs {
   padding: 16px;
   padding-top: 18px;
   padding-bottom: 18px;
-  font-size: 0; }
+  font-size: 0;
+  pointer-events: none; }
 
 .main-nav__item:hover,
 .main-nav__item--selected {

@@ -924,8 +924,8 @@ div.nojs {
   overflow: hidden;
   -webkit-transform-style: inherit;
           transform-style: inherit;
-  -webkit-transform: translateZ(-1px) scale(2) translateY(-100px);
-          transform: translateZ(-1px) scale(2) translateY(-100px);
+  -webkit-transform: translateZ(-1px) scale(2) translateY(-120px);
+          transform: translateZ(-1px) scale(2) translateY(-120px);
   z-index: -1; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .rooms__parallax {

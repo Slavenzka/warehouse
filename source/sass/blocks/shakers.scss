@@ -4,7 +4,14 @@
   align-items: flex-start;
   justify-content: flex-start;
   background-color: $background-color__shakers;
+  overflow: hidden;
   z-index: 1;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    order: 5;
+    width: 100%;
+    height: 370px;
+  }
 }
 
 .shakers__header {
@@ -87,7 +94,7 @@
   padding-top: 49px;
   padding-left: 50px;
   flex-basis: 750px;
-  max-height: 100%;
+  height: 100%;
 }
 
 .shakers__link {
@@ -195,4 +202,8 @@
   line-height: 58px;
   color: $font-color__slogan;
   letter-spacing: 0.2px;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 100%;
+  }
 }

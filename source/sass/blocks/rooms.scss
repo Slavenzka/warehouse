@@ -1,6 +1,12 @@
 .rooms {
   position: relative;
   transform-style: inherit;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    order: 4;
+    width: 100%;
+    height: 330px;
+  }
 }
 
 .rooms__parallax {
@@ -21,6 +27,12 @@
 
   @media (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
     background-image: url("../img/rooms-background@2x.jpg");
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    min-height: 100%;
+    transform: translateY(0);
+    background-position: 0 -390px;
   }
 }
 

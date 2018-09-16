@@ -197,9 +197,10 @@ div.nojs {
   position: absolute;
   top: 2px;
   left: 0;
-  fill: #c5c5c5; }
+  fill: #c5c5c5;
+  pointer-events: none; }
 
-.like .heart {
+.like > .heart {
   fill: #fa857b; }
 
 .favourite {
@@ -208,7 +209,7 @@ div.nojs {
   margin: 0;
   padding: 0;
   padding-left: 22px;
-  min-height: 21px;
+  min-height: 22px;
   font-family: "Ginora Sans", "Arial", sans-serif;
   font-size: 18.5px;
   line-height: 18.5px;
@@ -219,6 +220,9 @@ div.nojs {
   border: none;
   background-color: transparent;
   cursor: pointer; }
+
+.favourite > span {
+  pointer-events: none; }
 
 .like {
   font-family: "Roboto", "Arial", sans-serif;
@@ -1049,11 +1053,11 @@ div.nojs {
 
 .shakers__favourite {
   margin-top: 31px;
-  margin-left: 7px; }
+  margin-left: 3px;
+  padding-left: 26px; }
 
 .shakers__favourite > .heart {
-  top: 3px;
-  left: -4px; }
+  top: 3px; }
 
 .shakers__pic-link {
   margin-top: 41px;

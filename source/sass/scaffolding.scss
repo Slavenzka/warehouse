@@ -147,9 +147,10 @@ div.nojs {
   top: 2px;
   left: 0;
   fill: $background-color__heart--disabled;
+  pointer-events: none;
 }
 
-.like .heart {
+.like > .heart {
   fill: $background-color__heart--enabled;
 }
 
@@ -159,7 +160,7 @@ div.nojs {
   margin: 0;
   padding: 0;
   padding-left: 22px;
-  min-height: 21px;
+  min-height: 22px;
   font-family: $font-family__aux;
   font-size: 18.5px;
   line-height: 18.5px;
@@ -170,6 +171,10 @@ div.nojs {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.favourite > span {
+  pointer-events: none;
 }
 
 .like {

@@ -18,6 +18,11 @@
     border-right: 166px solid transparent;
     z-index: 0;
   }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    order: 1;
+    width: 1048px;
+  }
 }
 
 .promotion__product {
@@ -38,6 +43,7 @@
 .promotion__title {
   margin: 0;
   margin-top: 69px;
+  max-width: 237px;
   font: inherit;
 }
 
@@ -102,6 +108,10 @@
   color: $font-color__slogan;
   text-align: center;
   letter-spacing: 1.1px;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 100%;
+  }
 }
 
 .promotion__control {

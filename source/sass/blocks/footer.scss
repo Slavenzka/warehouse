@@ -4,6 +4,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% -2px;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    order: 7;
+    height: 346px;
+    width: 100%;
+  }
 }
 
 .footer__info {
